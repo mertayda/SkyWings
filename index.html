@@ -13,19 +13,24 @@
     />
   </head>
   <body>
-    <header>
-      <a href="" class="logo"> Skywings </a>
-      <nav>
-        <ul class="nav-items">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Package</a></li>
-          <li><a href="">Contact</a></li>
+    <nav>
+      <div class="nav-header">
+        <a href="#" class="logo">Skywings</a>
+
+        <div class="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#tour">TOUR</a></li>
+          <li><a href="#package">PACKAGE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
-      </nav>
-      <button class="nav-btn">BOOK TRIP</button>
-    </header>
+
+        <button class="nav-btn">Book Now</button>
+      </div>
+    </nav>
     <section class="hero">
       <div class="container">
         <div class="hero-container">
@@ -384,17 +389,27 @@
     <footer>
       <div class="container">
         <div class="footer-container">
-          <div class="footer-card">
-            <h1 class="brand">Skywings</h1>
-            <p>Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where seamless planning meets unforgettable experiences.</p>
-            <ul class="footer-social">
-              <li><i class="fa-brands fa-facebook"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-youtube"></i></li>
+          <div class="footer-section footer-section-about">
+            <h1 class="footer-heading about">Skywings</h1>
+            <p class="footer-description">
+              Explore the world with ease and excitement through our
+              comprehensive travel platform. Your journey begins here, where
+              seamless planning meets unforgettable experiences.
+            </p>
+            <ul class="footer-social-list">
+              <li class="social-media-item">
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li class="social-media-item">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="social-media-item">
+                <i class="fa-brands fa-youtube"></i>
+              </li>
             </ul>
           </div>
-          <div class="footer-card">
-            <h1 class="links">Quick Links</h1>
+          <div class="footer-section footer-section-links">
+            <h1 class="footer-heading links">Quick Links</h1>
             <ul class="links-list">
               <li>Home</li>
               <li>Flights</li>
@@ -402,22 +417,28 @@
               <li>Cruise</li>
             </ul>
           </div>
-          <div class="footer-card">
-            <h1 class="contact">Contact Us</h1>
-            <ul>
-              <li><i class="fa-solid fa-phone">+9999999</i></li>
-              <li><i class="fa-solid fa-glasses"></i>info@skywings.com</li>
-              <li><i class="fa-solid fa-location-dot"></i>New York</li>
+          <div class="footer-section footer-section-contact">
+            <h1 class="footer-heading contact">Contact Us</h1>
+            <ul class="contact-list">
+              <li class="contact-list-icon">
+                <i class="fa-solid fa-phone"></i>+9999999
+              </li>
+              <li class="contact-list-icon">
+                <i class="fa-solid fa-glasses"></i>info@skywings.com
+              </li>
+              <li class="contact-list-icon">
+                <i class="fa-solid fa-location-dot"></i>New York
+              </li>
             </ul>
           </div>
-          <div class="footer-card">
-            <h1 class="subscribe">Subscribe</h1>
-            <input type="email" placeholder="Enter Your Email">
-            <button>
-              Subscribe
-            </button>
+          <div class="footer-card footer-section-subscribe">
+            <h1 class="footer-heading subscribe">Subscribe</h1>
+            <div class="subscribe-form">
+              <input type="email" placeholder="Enter Your Email" />
+              <button>Subscribe</button>
+            </div>
           </div>
-        </div>  
+        </div>
       </div>
     </footer>
     <script src="/main.js"></script>

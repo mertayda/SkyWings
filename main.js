@@ -2,6 +2,10 @@ const commentsContainer = document.querySelector(".comments-container");
 const commentCard = document.querySelectorAll(".comment-card");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+const hamburgerBtn = document.querySelector(".hamburger-btn")
+const nav = document.querySelector("nav")
+const navHeader = document.querySelector(".nav-header")
+const navItems = document.querySelector(".nav-links")
 
 let currentIndex = 0;
 let commentCardIndex  =  commentCard.length
@@ -36,3 +40,7 @@ updateComments();
 
 nextBtn.addEventListener("click",moveRight)
 prevBtn.addEventListener("click",moveLeft)
+
+hamburgerBtn.addEventListener("click", () => {
+    navItems.classList.toggle("active")
+})
