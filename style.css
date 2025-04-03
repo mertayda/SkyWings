@@ -12,6 +12,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -551,7 +552,7 @@ nav {
 .carousel {
   position: relative;
   overflow: hidden;
-  width: calc(350px * 3 + 4rem);
+  width: 100%;
 }
 
 .comments-container {
@@ -893,6 +894,10 @@ footer {
     font-size: 1.2rem;
   }
 
+  .hero {
+    margin-top: 5rem;
+  }
+
   .journey-container {
     grid-template-columns: 1fr;
   }
@@ -903,6 +908,7 @@ footer {
   .wanderlust-container img {
     max-width: 100%;
   }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -944,6 +950,9 @@ footer {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .wanderlust-container {
     flex-direction: column;
+  }
+  .wanderlust-img {
+    max-width: 100%;
   }
 }
 
