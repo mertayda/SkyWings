@@ -7,6 +7,13 @@ const nav = document.querySelector("nav")
 const navHeader = document.querySelector(".nav-header")
 const navItems = document.querySelector(".nav-links")
 
+
+const destinationCarousel = document.querySelector(".destination-carousel")
+const destinationCard = document.querySelectorAll(".destination-card")
+const destinationNext = document.querySelector(".destination-next")
+const destinationPrev = document.querySelector(".destination-prev")
+
+
 let currentIndex = 0;
 let commentCardIndex  =  commentCard.length
 let commentCardWidth = commentCard[0].offsetWidth
@@ -44,3 +51,47 @@ prevBtn.addEventListener("click",moveLeft)
 hamburgerBtn.addEventListener("click", () => {
     navItems.classList.toggle("active")
 })
+
+// Destination carousel 
+
+let destinationIndex = 0
+let destinationCardIndex = destinationCard.length
+let destinationCardWidth = destinationCard[0].offsetWidth
+
+function updateDestination(){
+    let destinatinWidthSum = -destinationIndex * destinationCardWidth
+    destinationCarousel.style.transform = `translateX(${destinatinWidthSum}px)`
+}
+
+
+
+function destinationShowCase(){
+   
+    if(destinationIndex < destinationCardIndex - 1 ){
+        destinationIndex ++;
+
+         
+    } else{
+        destinationIndex = 0;
+    }
+
+    updateDestination()
+}
+
+
+function destinationShowCaseBack(){
+   
+    if(destinationIndex > 0 ){
+        destinationIndex--;
+
+         
+    } else{
+        destinationIndex = destinationCardIndex - 1
+    }
+
+    updateDestination()
+}
+
+
+destinationNext.addEventListener("click", destinationShowCase)
+destinationPrev.addEventListener("click", destinationShowCaseBack)
