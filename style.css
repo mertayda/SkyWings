@@ -352,6 +352,80 @@ nav {
   font-size: 0.75rem; /* Adjust icon size if needed */
 }
 
+/*Flight*/
+
+.flight {
+  padding: 5rem 1rem;
+  margin-bottom: 8rem;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flight-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.flight-next,
+.flight-prev {
+  background-color: var(--primary-color);
+  color: var(--extra-light);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.flight-container {
+  overflow-x: hidden;
+}
+
+.flight-carousel {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 10px;
+  width: 100%;
+}
+.flight-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  word-wrap: break-word;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.flight-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flight-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.flight-card-info h1 {
+  color: var(--primary-color);
+  font-weight: lighter;
+}
+
+.flight-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flight-price > :nth-child(2) {
+  font-weight: bold;
+}
 /*Journey*/
 
 .journey {
